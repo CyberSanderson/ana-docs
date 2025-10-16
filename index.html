@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocsByAna | Your Personal Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animate On Scroll Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="/logo.png" alt="DocsByAna Logo" class="h-12 mr-2">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-pink-500 transition duration-300">About</a>
+                <a href="#services" class="text-gray-600 hover:text-pink-500 transition duration-300">Services</a>
+                <a href="#contact" class="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition duration-300">Get Started</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-pink-500 focus:outline-none">
+                    <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#about" class="block text-center text-gray-600 hover:bg-pink-50 hover:text-pink-500 py-3 transition duration-300">About</a>
+            <a href="#services" class="block text-center text-gray-600 hover:bg-pink-50 hover:text-pink-500 py-3 transition duration-300">Services</a>
+            <a href="#contact" class="block text-center text-gray-600 hover:bg-pink-50 hover:text-pink-500 py-3 transition duration-300">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center py-20 md:py-32" style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-pink-900/70"></div>
+            
+            <div class="relative container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Reclaim Your Time. Simplify Your Life.</h1>
+                <p class="mt-4 text-lg md:text-xl text-pink-100 max-w-3xl mx-auto">Let me handle the details and administrative tasks, so you can focus on what truly matters. Your personal assistant for life's complexities.</p>
+                <a href="#contact" class="mt-8 inline-block bg-white text-pink-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-300">Schedule Your Consultation</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white overflow-hidden">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center md:text-left md:flex items-center gap-12">
+                     <img 
+                        src="/ana.jpg" 
+                        alt="Portrait of Ana, a friendly and professional woman" 
+                        class="w-48 h-48 md:w-60 md:h-60 rounded-full mx-auto md:mx-0 object-contain bg-white shadow-lg flex-shrink-0"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x400/ec4899/FFFFFF?text=Ana';"
+                        data-aos="fade-right">
+                    <div data-aos="fade-left">
+                        <h2 class="text-3xl font-bold text-pink-500 mt-6 md:mt-0">From Meticulous Care to Personalized Support</h2>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            My career has always been driven by a single mission: to provide focused, compassionate support that makes a tangible difference in people's lives. 
+                        </p>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                           After more than a decade in the demanding medical field, I honed a unique skill set for managing complex details with precision, empathy, and unwavering attention. I saw firsthand how overwhelming administrative burdens could be, and I knew my skills could serve people in a new, more personal way.
+                        </p>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                           That is the foundation of <strong>DocsByAna</strong>. I created this service to be your personal advocate—an expert partner dedicated to navigating the paperwork and processes that stand in your way. My goal is to bring professional clarity and profound ease to your life, freeing you to focus on what truly matters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 overflow-hidden">
+            <div class="container mx-auto px-6 max-w-6xl">
+                 <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-gray-800">How It Works</h2>
+                    <p class="mt-2 text-lg text-gray-600">A simple, stress-free process.</p>
+                </div>
+                <div class="md:flex items-center gap-12">
+                    <div class="md:w-1/2" data-aos="fade-right">
+                        <img 
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop" 
+                            alt="Person filling out an online application form on a computer screen." 
+                            class="rounded-lg shadow-xl w-full"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/f0abfc/FFFFFF?text=Easy+Process';">
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-pink-500 text-white font-bold rounded-full h-10 w-10 flex items-center justify-center text-xl mr-4 flex-shrink-0">1</div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Consultation</h3>
+                                <p class="text-gray-600 mt-1">We start with a brief call to understand your needs and how I can best assist you.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-6">
+                             <div class="bg-pink-500 text-white font-bold rounded-full h-10 w-10 flex items-center justify-center text-xl mr-4 flex-shrink-0">2</div>
+                            <div>
+                                <h3 class="text-2xl font-bold">I Get to Work</h3>
+                                <p class="text-gray-600 mt-1">I handle the paperwork, scheduling, or booking, keeping you informed every step of the way.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-500 text-white font-bold rounded-full h-10 w-10 flex items-center justify-center text-xl mr-4 flex-shrink-0">3</div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Peace of Mind</h3>
+                                <p class="text-gray-600 mt-1">You get your time back and the peace of mind that comes with knowing the details are handled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-gray-800">My Services</h2>
+                    <p class="mt-2 text-lg text-gray-600">Tailored support for your personal and professional needs.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Initial Consultation -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-pink-500">Initial Consultation</h3>
+                        <p class="mt-2 text-gray-600">Let's discuss your specific needs to see how I can best help you.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$9.99</div>
+                    </div>
+                    <!-- Career Services -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-pink-500">Resumes & Cover Letters</h3>
+                        <p class="mt-2 text-gray-600">Crafting professional documents to help you land your next opportunity.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$60</div>
+                    </div>
+                    <!-- Job Applications -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-pink-500">Job Application Assistance</h3>
+                        <p class="mt-2 text-gray-600">Meticulously filling out applications to save you time and effort.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$10</div>
+                        <p class="text-sm text-gray-500">per application</p>
+                    </div>
+                    <!-- Government & DMV -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-pink-500">Government Applications</h3>
+                        <p class="mt-2 text-gray-600">Navigating complex government forms with precision and care.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$45 - $50</div>
+                    </div>
+                    <!-- Travel Booking -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-pink-500">Flight & Travel Booking</h3>
+                        <p class="mt-2 text-gray-600">Finding the best options and handling the booking process for you.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$50 - $60</div>
+                    </div>
+                     <!-- Misc. Appointments -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-pink-500">DMV & Other Appointments</h3>
+                        <p class="mt-2 text-gray-600">Scheduling and managing your important appointments.</p>
+                        <div class="mt-4 text-4xl font-bold text-gray-800">$30</div>
+                    </div>
+                </div>
+                 <!-- Legal Disclaimer -->
+                <div class="mt-12 text-center bg-gray-100 p-6 rounded-lg max-w-3xl mx-auto" data-aos="fade-up">
+                    <h4 class="font-bold text-lg text-gray-700">Court Proceeding Discussions: $75</h4>
+                    <p class="text-gray-600 mt-2">I can help organize your thoughts and documents for court proceedings. Please note: I am not a lawyer and I provide **no legal advice**. This service is for organizational and discussion purposes only.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact/CTA Section -->
+        <section id="contact" class="bg-pink-700 text-white py-20">
+            <div class="container mx-auto px-6 text-center" data-aos="zoom-in">
+                <h2 class="text-4xl font-bold">Ready to lighten your load?</h2>
+                <p class="mt-4 text-lg text-pink-100 max-w-2xl mx-auto">Let's connect and find out how I can bring some ease back into your life. The first step is a simple conversation.</p>
+                <p class="mt-6 text-lg text-pink-100 font-medium">docsbyana@gmail.com</p>
+                <a href="mailto:docsbyana@gmail.com" class="mt-6 inline-block bg-white text-pink-600 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-300">Email Ana to Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 DocsByAna. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="privacy.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <span class="mx-2 text-gray-500">|</span>
+                <a href="terms.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animate On Scroll Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.getElementById('menu-open-icon');
+      const menuCloseIcon = document.getElementById('menu-close-icon');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuOpenIcon.classList.toggle('hidden');
+        menuCloseIcon.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked for smooth scrolling
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuOpenIcon.classList.remove('hidden');
+          menuCloseIcon.classList.add('hidden');
+        });
+      });
+    </script>
+
+</body>
+</html>
